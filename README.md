@@ -4,3 +4,4 @@ This repository serves as an overview, containing some project ressources and li
 
 ## Ressources
 - Website spaceteam.at/uhb
+- Technical Report
