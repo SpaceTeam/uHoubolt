@@ -17,6 +17,7 @@ While these ressources are unfortunately not very well organized nor documented,
 - [Technical Report](TechnicalReport_EuRoC2022.pdf) and [LaTeX sources](TechnicalReport_EuRoC2022_Sources)
 - [Launch Procedures](µHoubolt_Launch_Procedures.pdf) and [LaTeX sources](µHoubolt_Launch_Procedures_Sources)
 - BOM
+- EuRoC 2022 Flight Report
 
 ### Simulation
 - [OpenRocket Liquid Engine Generator](https://github.com/SpaceTeam/ORLEG)
