@@ -5,6 +5,8 @@ To enable other student or amateur teams to benefit from our developments, and m
 
 This repository serves as an overview, containing some project ressources and linking to many others.
 
+In case of any questions, please feel free to contact [daniel.frank@spaceteam.at](mailto:daniel.frank@spaceteam.at).
+
 ## Overview
 
 ## Ressources
@@ -41,5 +43,3 @@ While these ressources are not very well organized or documented, they should co
 - [ECUI Theming](https://github.com/SpaceTeam/SpaceTeamTheme)
 - [ECUI Config](https://github.com/SpaceTeam/config_ecui)
 - [PnID KiCAD library](https://github.com/SpaceTeam/pnid-lib)
-
-## Contact
