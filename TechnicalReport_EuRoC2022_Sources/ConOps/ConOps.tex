@@ -1,0 +1,136 @@
+\chapter{Concept of Operations}
+\label{chap:conops}
+
+\section{Rocket lifecycle during EuRoC}
+\begin{enumerate}
+    \item Rocket gets presented at the exhibition.
+    \item On the day before the launch, the rocket gets assembled, the recovery section prepared and the electronics checked.
+    \item On the launch day we bring the rocket to the launch site and start going through the launch day checklists.
+    \item After landing we recover the rocket and bring it back to the launch.
+    \item After inspection of the rocket, we bring it back to the exhibition area.
+\end{enumerate}
+
+\section{Launch Procedure}
+
+\subsection{Vehicle Assembly}
+\begin{enumerate}
+\item Pulling the RBF.
+\item Testing electronics - running test and launch sequence.
+\item Inserting the RBF halfway.
+\item Starting fuel loading process (see chapter ref \ref{Fuel Loading}).
+\item Checking the water state (cooling and heating cycle).
+\item Checking that the igniter electronics are deactivated.
+\item Installing the igniters.
+\item Mounting the Fincan to the body tube.
+\item Vacating the launch area.
+\end{enumerate}
+
+\subsection{Mission Control Setup}
+\begin{enumerate}
+\item Connecting directed radio link and Raspberry Pi with LoRa shield to server.
+\item Powering on server, Mission Control PC and monitors.
+\item Connecting Mission Control PC to server via LAN.
+\item Opening Mission Control Web-Application on Web-Browser.
+\end{enumerate}
+
+\subsection{Launch Pad Setup}
+\begin{enumerate}
+\item Mounting flame diverter.
+\item Connecting GSE to directed radio link.
+\item Filling water reservoirs.
+\item Flipping, installing and sealing oxidizer bottle inside temperature exchange mantle.
+\item From now on continuously check and add ice to cold water reservoir.
+\item Installing pressurant bottle.
+\item Sliding rocket onto launch rail.
+\item Mounting T-nut underneath lower rail button.
+\item Securing and closing holddown above lower rail button.
+\item Connecting oxidizer, pressurant and electrical umbilicals.
+\item Pulling RBF pin halfway to power on avionics.
+\item Checking sensors and actuators, verifying movement and calibration, via Mission Control.
+\end{enumerate}
+
+\subsection{Fuel Loading} \label{Fuel Loading}
+\begin{enumerate}
+\item Closing fuel main valve.
+\item Mounting the tyre fill adapter connected to the syringe filled with ethanol to the fuel inlet section to open the check valve completely.
+\item Applying force to the syringe to fill the tank with a precise amount of fuel and enabling the ullage gas to exit the tank through the small bleed orifice.
+\item Removing the syringe from the rocket after filling.
+\item Covering the rocket’s fuel inlet section.
+\end{enumerate}
+
+\subsection{Final Pad preps}
+\begin{enumerate}
+\item Opening oxidizer bottle and checking for leaks.
+\item Opening pressurant bottle and checking for leaks.
+\item Staring pad cameras.
+\item Pulling RBF pin to connect power to ignition circuitry.
+\end{enumerate}
+
+From this point onwards the rest of the preparations until launch can be done completely remotely. 
+
+\subsection{Oxidizer Loading}
+\label{sec:oxidizer_loading}
+Pressure and temperature data is closely monitored throughout the whole process.
+\begin{enumerate}
+\item Closing oxidizer main valve.
+\item Activating and setting the vent valve pressure regulation to 30 bar.
+\item Closing pressurant vent valve.
+\item Opening pressurant tanking valve for filling pressurant until vent valve gets activated. Then closing pressurant tanking valve.
+\item Closing oxidizer vent valve.
+\item Opening oxidizer fill valve to start the oxidizer loading.
+\item Activating the heating cycle in the oxidizer bottle.
+\item Quickly closing oxidizer fill valve when plume (venting liquid oxidizer) is visible.
+\item Deactivating the heating cycle/activating the cooling cycle in the oxidizer bottle.
+\item Opening oxidizer fill valve again after a stabilization of the venting frequency.
+\item Quickly closing oxidizer fill valve when plume is visible. 
+\item Opening oxidizer vent valve.
+\end{enumerate}
+
+\subsection{Pressurant Loading}
+\label{sec:pressurant_loading}
+\begin{enumerate}
+\item Deactivating vent valve pressure regulation.
+\item Opening pressurant tanking valve.
+\item Waiting for stable pressurization.
+\item Closing pressurant tanking valve.
+\item Opening pressurant vent valve.
+\item Activating umbilical retract of pressurant and oxidizer tanking lines and verifying clean separation.
+\end{enumerate}
+
+\subsection{Internal Countdown and Launch}
+\begin{enumerate}
+\item Activating the rockets internal control via Mission Control after Go/NoGo.
+\item The rocket does a continuity check on the igniters, if continuity is given,  start internal countdown.
+\item The rocket checks for proper engine performance after ignition. This is measured by a proxy measurement of combustion chamber pressure. The threshold is set beforehand by Mission Control and is usually set to around \SI{10}{\bar}.
+\item If proper engine performance is detected by the rocket, it sends a signal to the Launch Pad to release the holddown.
+\item Lift-Off is achieved once the electrical umbilical that is magnetically held in place gets disconnected by the rocket moving out of reach.
+\end{enumerate}
+
+Until lift-off there is still a possibility for manual abort from Mission Control. Beginning with lift-off and the electrical umbilical disconnecting the rocket is monitoring itself and no manual abort is possible. The rocket is now in powered ascent phase.
+
+The entire engine burn duration is \SI{8}{\second} long, after which the main valves are closed and we have achieved MECO (Main Engine Cut Off). Since the propellant tanks are sized for this \SI{8}{\second} burn duration, alternatively the engine could also just be left open to run out of propellant (which should happen roughly \SI{8.8}{\second} after ignition). This approach has the advantage of not needing to open the main valves again for complete depressurization.
+
+From then on, the rocket is in unpowered ascent until apogee is detected and recovery is triggered.
+
+\subsection{Recovery}
+\begin{enumerate}
+\item Opening vent valve pressure regulation.
+\item Closing vent valve pressure regulation when the tanks are fully depressurized.
+\item Opening fuel main valve for remaining fuel unloading.
+\item Separation of the nose cone from the body tube at apogee.
+\item Drogue chute release at apogee.
+\item Main chute release \SI{250}{\meter} altitude. Backup Altimax triggers at \SI{200}{\meter}.
+\item Recovering the rocket after landing.
+\end{enumerate}
+
+\subsection{GSE Safing}
+\begin{enumerate}
+\item Stopping all cameras.
+\item Closing the oxidizer bottle.
+\item Closing the pressurant bottle.
+\item Vacating the pad area.
+\item Opening oxidizer fill valve.
+\item Opening pressurant tanking valve.
+\item Checking all pressure data to verify a full depressurization of the system.
+\item Announcing "safe state".
+\end{enumerate}

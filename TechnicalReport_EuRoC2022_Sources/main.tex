@@ -1,0 +1,77 @@
+\documentclass[parskip=half, twoside=false]{scrreprt}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{siunitx} %For degree symbol etc.
+\DeclareSIUnit\bar{bar}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{geometry} %packages für gescheite A4 Seite
+\usepackage{lscape} %to have tables in landscape mode
+\usepackage{float} %to place figures where they are in the source with [H]
+\usepackage{pdfpages} %to insert pdfs for appendices
+\usepackage[caption = false]{subfig}
+\restylefloat{table} %makes [H] possible for tables as well
+\setcounter{secnumdepth}{4}
+
+\geometry
+{
+	paper					=	{a4paper},
+	ignoreheadfoot,
+	hmargin					=	{20mm},
+	vmargin					=	{25mm},
+	headsep					=	{5mm},
+	footskip				=	{\dimexpr5mm+\normalbaselineskip},
+	headheight		    	=	{10mm},
+}
+\usepackage{hyperref}
+\usepackage{cleveref}
+
+\newcommand{\uH}{$\mu$Houbolt }
+
+\title{\boldmath{$\mu$}Houbolt Technical Report}
+\subtitle{Team 25 Technical Report to the 2022 EuRoC}
+\author{TU Wien Space Team}
+\date{2022}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\input{Abstract/Abstract}
+
+\newpage
+
+\input{Introduction/Introduction}
+
+\newpage
+
+\input{SysArch/SysArch}
+
+\newpage
+
+\input{ConOps/ConOps}
+
+\newpage
+
+\input{Conclusion/Conclusion}
+
+\newpage
+
+\input{Appendices/Appendices}
+
+\newpage
+
+\renewcommand{\bibname}{References}
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}

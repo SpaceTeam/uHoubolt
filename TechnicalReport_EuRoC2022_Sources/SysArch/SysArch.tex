@@ -1,0 +1,90 @@
+\chapter{System Architecture}
+\label{chap:sysarch}
+
+\section{Overview}
+
+\subsection{Physical Architecture}
+\Cref{fig:sysarch_cad} shows a rendering of the \uH CAD model. The vehicle consists of the airframe, the propulsion system, the recovery system and avionics. The propulsion system structure, which also contains the avionics components, is self-contained and can be slid into the airframe from the bottom. The recovery system is mounted to the top of the airframe. The custom pressure bearing components were validated using FEM simulations as well as pressure proof tests to 1.5x of maximum pressure.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{SysArch/uHb_render.jpg}
+    \caption{\uH physical architecture}
+    \label{fig:sysarch_cad}
+\end{figure}
+
+\subsection{Fluid System}\label{sec:sysarch_fluidSystem}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{SysArch/uHoubolt_complete_PnID.pdf}
+    \caption{\uH Piping and Instrumentation Diagram (PnID)}
+    \label{fig:full_pnid}
+\end{figure}
+
+Visible here is the PnID for the complete fluid system. This includes the rocket itself, as well as the Ground Support Equipment which encompasses the Pressurant and Ox Fill System. The three connections between the rocket and the GSE are quick connect fittings which are connected to a movable arm  to automatically disconnect them shortly before launch. See \cref{sec:gndsys} for more info on the GSE and \cref{sec:umbilicals} for the umbilicals specifically.
+
+\subsection{Mass Budget}
+\Cref{tab:massbudget} show the current mass budget for \uH.
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Component} & \multicolumn{1}{c|}{\textbf{Mass in g}} \\ \hline
+Airframe & 1900 \\ \hline
+Recovery & 800 \\ \hline
+Avionics & 400 \\ \hline
+Payload & 1000 \\ \hline
+Oxidizer System & 2600 \\ \hline
+Fuel System & 1600 \\ \hline
+Engine Section & 650 \\ \hline
+\textbf{Total Mass Dry} & \textbf{8950} \\ \hline
+Oxidizer & 2100 \\ \hline
+Fuel & 700 \\ \hline
+Pressurant & 290 \\ \hline
+\textbf{Total Mass Wet} & \textbf{12040} \\ \hline
+\end{tabular}
+\caption{General System Data}
+\label{tab:massbudget}
+\end{table}
+
+\subsection{Flight Simulation}
+
+A flight simulation was performed with OpenRocket \cite{openrocket}, using a model of the vehicle closely matched to the CAD model and mass budget. The OpenRocket engine configuration (representing the whole propulsion system) was generated using ORLEG \cite{orleg}, which, in addition to changes in mass, also incorporates changes of the center of gravity location due to emptying propellant tanks and flowing pressurant gas as well as the effect of the changing ambient pressure on the engine performance. Assuming medium wind speeds and a launch downwind, the simulation yields the following results:
+
+\begin{itemize}
+\item Apogee: \SI{3558}{\meter}
+\item Maximum velocity: \SI{302}{\meter\per\second} (Mach 0.91)
+\item Maximum acceleration: \SI{51.5}{\meter\per\second\squared}
+\item Flight time to apogee: \SI{27.8}{\second}
+\item Total flight time: \SI{217}{\second}
+\end{itemize}
+
+Assuming an effective launch rail length of \SI{6}{\meter} (total length of \SI{7}{\meter} minus the distance between the rail buttons of about \SI{1}{\meter}) the vehicle has a velocity of \SI{22.2}{\meter\per\second} when leaving the rail and is aerodynamically stable.
+
+
+
+\newpage
+
+\input{Propulsion/Propulsion}
+
+\newpage
+
+\input{Aerostructure/Aerostructure}
+
+\newpage
+
+\input{Recovery/Recovery}
+
+\newpage
+
+\input{Payload/Payload}
+
+\newpage
+
+\input{Avionics/Avionics}
+
+\newpage
+
+\input{GroundSystems/GroundSystems}
