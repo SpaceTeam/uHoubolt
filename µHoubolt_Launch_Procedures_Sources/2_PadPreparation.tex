@@ -1,0 +1,120 @@
+\newpage
+\setcounter{page}{1}
+\lhead{Pad Prep}
+\lfoot{\thepage / \pageref{end_section_pressurant}}
+\section*{Pad Preparation}
+\input{0_Legend}
+
+IF A CHECK FAILS AND NO OTHER MEASURE IS SPECIFIED OR THE SPECIFIED MEASURE FAILS TOO, INFORM MISSION LEAD AND AWAIT FURTHER INSTRUCTIONS
+
+\begin{enumerate}[label=PP\arabic*.]
+
+    \item READ THE WHOLE CHECKLIST BEFORE STARTING \checkbox
+
+    \starttask{Required tools, materials and personnel}{\hphantom{a}}
+    \item \label{pad_prep_personnel} Personnel
+        \begin{enumerate}[label*=\arabic*.]
+            \item GSE lead: Johann Breyner
+            \item 1 Electronics crew as temporary MC: Markus Pinter
+            \item Pad prep crew 1: Florian Dellekart
+            \item Pad prep crew 2: Amir Vafaie
+            \item Pad prep crew 3: Bernhard Hansemann
+        \end{enumerate}
+    \item \label{pad_prep_tools} Tools
+        \begin{enumerate}[label*=\arabic*.]
+            \item Hammer\leftcheckbox
+            \item T10 Key\leftcheckbox
+            \item T30 Key\leftcheckbox
+            \item Allen Key \SI{2.5}{\milli\meter}\leftcheckbox
+        \end{enumerate}
+    \item \label{pad_prep_materials} Materials
+        \begin{enumerate}[label*=\arabic*.]
+            \item 1x Launch rail base\leftcheckbox
+            \item 2x Launch rail truss\leftcheckbox
+            \item 2x \SI{2}{\meter} rail section\leftcheckbox
+            \item 1x \SI{1}{\meter} rail section\leftcheckbox
+            \item 2x Launch rail struts\leftcheckbox
+            \item Propellant loading cart\leftcheckbox
+            \item Server rack\leftcheckbox
+            \item Flame deflector + safety wires
+            \item 3x Guy Cable (ratchet strap + rope + carabiner)\leftcheckbox
+            \item 6x Truss connection pins + cross pins\leftcheckbox
+            \item 3x Tent pegs\leftcheckbox
+            \item 6x Sliding blocks\leftcheckbox
+            \item 6x Rail mounting screws\leftcheckbox
+            \item \SI{50}{\liter} water in water tanks.\leftcheckbox
+            \item \SI{10}{\liter} Water for pad crew. (Canisters \& small bottles)\leftcheckbox
+            \item Blue trailer tarp\leftcheckbox
+            \item Garbage Bag\leftcheckbox
+        \end{enumerate} 
+    
+    \starttask{Pad preparation}{\hphantom{a}}
+    
+    \item \label{pad_prep_start} Place trailer towards the left side of the launch pad (apply breaks, extend legs, extend trolley wheel)\checkbox
+    \item Remove all equipment except launch rail and tanking cart from trailer \checkbox
+    \item Check if all equipment listed in section \ref{pad_prep_materials} is present and in working order \checkbox
+    \item Shift oxidiser loading cart to correct position \checkbox
+    \item Assemble launch rail in horizontal position \checkbox
+    \item Install guy cables on launch rail truss \checkbox
+    \item \label{rail_angle} Raise rail to launch angle \newline(84°+-1° pitch, 0°+-1° roll, see bubble levels) \checkbox
+    \item Tension and secure guy cables \checkbox
+    \item Check launch rail angle, alignment and straightness, adjust to values specified in point \ref{rail_angle} and restraighten if necessary \checkbox
+    \item Install strongback on launch rail (red markings) \checkbox
+    \item Connect retraction line and decouplers to strongback \checkbox
+    \item Install umbilicals \checkbox
+    \item Fill hot water reservoir \checkbox
+    \item Fill cold water reservoir \checkbox
+    \item \label{software_prep_start} Place Server Rack next to trailer and open for access.\checkbox
+    \item Connect cable reel to generator and plug in GSE\checkbox
+    \item Connect CAN cable to GSE.\checkbox
+    \item Plug CAN cable into server\checkbox
+    \item Check proper cable connections in server rack (ethernet, power), plug in properly if loose\checkbox
+    \item Connect server rack power distributor to cable reel\checkbox
+    \item \label{radio_link} \underline{Prepare directed radio link}
+        \begin{enumerate}[label*=\arabic*.]
+            \item Set up radio dish labeled "Pad"\leftcheckbox
+            \item Connect PoE for radio \leftcheckbox
+            \item Check if radio link is connected to router correctly (Data link LED \& Power LED), if not working disconnect and reconnect \leftcheckbox
+        \end{enumerate}
+    \item Connect laptop to router as temporary mission control.\checkbox
+    \item \label{network_cam} \underline{Prepare network cameras}
+        \begin{enumerate}[label*=\arabic*.]
+            \item Connect network cameras to PoE switch \leftcheckbox
+            \item Check network cameras for working video on temp MC \leftcheckbox
+            \item If risk of rain, prepare network cams for setup by pad crew on launch day, if not set them up for view at launch rail directly. \leftcheckbox
+        \end{enumerate}
+
+    \starttask{Pre-Flight System Check only if Pad Prep is sufficiently far before launch window (several hours/day before)}{\hphantom{a}}
+    \item Man temporary MC for electronics check \checkbox
+    \item \label{pad_start} \underline{Temporary MC: Check functionality of following individual sensors},\newline\underline{No Software errors}
+        \begin{enumerate}[label*=\arabic*.]
+            \item Hot water temperature \leftcheckbox
+            \item Cold water temperature \leftcheckbox
+            \item Pressurant pressure \leftcheckbox
+            \item Ox pressure \leftcheckbox
+        \end{enumerate}
+    \item \underline{Temporary MC:
+    check functionality of actuators (verify movement}\newline\underline{and calibration), Software reports no errors and visual inspection}\newline\underline{of actuator movement}
+        \begin{enumerate}[label*=\arabic*.]
+            \item Ox tanking valve \leftcheckbox
+            \item Ox vent valve \leftcheckbox
+            \item Pressurant tanking valve \leftcheckbox
+            \item Pressurant vent valve \leftcheckbox
+            \item Umbilical retract \leftcheckbox
+            \item Hot water pump \leftcheckbox
+            \item Cold water pump \leftcheckbox
+            \item Solenoid valves \leftcheckbox
+            \item Holddown \leftcheckbox
+        \end{enumerate}
+        
+    
+    \item In case of expected high humidity and over night storage on pad, put dry rice in the server rack and seal it as best as possible.\checkbox
+    
+    \starttask{Pad Prep completed}{\hphantom{a}}
+    \item Cover trailer with blue tarp.\checkbox
+    \item Cover GSE external electronics with garbage bag.\checkbox
+    \item GSE Lead: report to Mission Lead that pad preparation is complete\checkbox
+    \item If Pad prep is on launch day, instruct pad personnel to start On-Day Pad Preparation.\checkbox
+    \item \label{pad_prep_end} Vacate area.\checkbox
+
+\end{enumerate}

@@ -1,0 +1,202 @@
+\newpage
+\setcounter{page}{1}
+\lhead{Rocket}
+\lfoot{\thepage / \pageref{end_section_rocket}}
+\section*{Rocket}
+%\input{0_NoteMissionControl}
+\input{0_Legend}
+
+\begin{enumerate}[label=R\arabic*.]
+
+    \item READ THE WHOLE CHECKLIST BEFORE STARTING \checkbox
+    
+    \starttask{Required tools, materials and personnel}{\hphantom{a}}
+    \item \label{rocket_personnel} Personnel
+        \begin{enumerate}[label*=\arabic*.]
+            \item Propulsion 1: Daniel Frank
+            \item Propulsion 2: Luis Büchi
+            \item Recovery 1: Georg Mikula
+            \item Recovery 2: Michael Pohn
+        \end{enumerate}
+    \item \label{rocket_tools} Tools
+        \begin{enumerate}[label*=\arabic*.]
+            \item Faceshields\leftcheckbox
+            \item Igniter Tools\leftcheckbox
+            \begin{enumerate}[label*=\arabic*.]
+                \item Box Cutter\leftcheckbox
+                \item White Permanent Marker\leftcheckbox
+                \item Thin Stick\leftcheckbox
+                \item Scale\leftcheckbox
+                \item Safety Glasses\leftcheckbox
+                \item Hand Gloves\leftcheckbox
+                \item Small Spoon\leftcheckbox
+                \item Hot Plate\leftcheckbox
+            \end{enumerate}
+            \item Airframe Assembly Tools\leftcheckbox
+            \begin{enumerate}[label*=\arabic*.]
+                \item Hex and Torx for M4 screws \leftcheckbox
+            \end{enumerate}
+            \item Side Cutters\leftcheckbox
+            \item Torx 6, 8, 20\leftcheckbox
+            \item Ibus 2.5\leftcheckbox
+            \item Masking Tape\leftcheckbox
+        \end{enumerate}
+    \item \label{rocket_materials} Materials
+        \begin{enumerate}[label*=\arabic*.]
+            \item Igniter Materials\leftcheckbox
+            \begin{enumerate}[label*=\arabic*.]
+                \item 6x E-Matches \leftcheckbox
+                \item 6x 3D-printed Cartridges \leftcheckbox
+                \item 6x Teflon Seal Discs\leftcheckbox
+                \item KNO3\leftcheckbox
+                \item Sugar\leftcheckbox
+                \item Mg\leftcheckbox
+            \end{enumerate}
+            \item Airframe Materials\leftcheckbox
+            \begin{enumerate}[label*=\arabic*.]
+                \item 8x black M4 screws (\SI{8}{\milli\meter}) for bodytube \&\newline nosecone coupler \leftcheckbox
+                \item 8x black M4 screws(4x\SI{8}{\milli\meter}, 4x\SI{10}{\milli\meter}) for bodytube \&\newline fincan coupler \leftcheckbox
+                \item Railbutton, T-nut and M4 screw (\SI{20}{\milli\meter}) \leftcheckbox
+                \item 4x M4  screws (\SI{10}{\milli\meter}) \leftcheckbox
+            \end{enumerate}
+            \item Main Battery, Backup Battery\leftcheckbox
+            \item Assortment of zip ties\leftcheckbox
+            \item Clampband\leftcheckbox
+            \item Reserve Shock Absorber\leftcheckbox
+            \item Payload\leftcheckbox
+            \item SD cards for cameras\leftcheckbox
+            \item Loctite\leftcheckbox
+            \item 5.5 Wrench\leftcheckbox
+            \item Altimax Cover\leftcheckbox
+            \item Felt tip pen (can be permanent marker)\leftcheckbox
+        \end{enumerate}
+    
+    \starttask{Recovery Assembly}{\hphantom{a}}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.7\linewidth]{recovery.png}
+        \caption{Recovery line setup}
+        \label{fig:chutes}
+    \end{figure}
+    \item Using loctite, screw upper clampband screws into upper clampband coupler without threads sticking out \checkbox
+    \item Push rubber bands onto screws and fix in place with cable ties \checkbox
+    \item Mount clampband line to lower coupler \checkbox
+    \item Mount shockbar to Recovery main tube\checkbox
+    \item Slide main shock cord onto shockbar\checkbox
+    \item Slide main deployment line onto shockbar (twice)\checkbox
+    \item Thread main deployment line through both main\newline deployment linecutters\checkbox
+    \item Mount lower clampband coupler to main tube \checkbox
+    \item Slide both drogue deployment linecutter through main tube\checkbox
+    \item Mount RCU to RCU cover\checkbox
+    \item Mount RCU to main tube (cables connected)\checkbox
+    \item Tape antenna to main tube\checkbox
+    \item Ensure shock absorber is intact. No more than the first stitched fold shall be loose.\checkbox
+    \item Fold main shock cord\checkbox
+    \item Thread deployment bag onto deployment bag line\checkbox
+    \item Fold main chute like in this video:\newline www.youtube.com/watch?v=g$\_$v6V4a9-PA\checkbox
+    \item Insert main chute into deployment bag\checkbox
+    \item Connect main shock cord to main chute (blue-brown)\checkbox
+    \item Secure shackle with masking tape \checkbox
+    \item Insert main shock cords into deployment bag\checkbox
+    \item Close deployment bag\checkbox
+    \item Insert deployment bag into main tube\checkbox
+    \item Thread deployment bag holdback line through main tube\checkbox
+    \item Connect line 2, drogue line and deployment bag line according to\newline figure \ref{fig:chutes} \checkbox
+    \item Connect line 2 and deployment bag line to drogue line (green) \checkbox
+    \item Secure shackle with masking tape \checkbox
+    \item Connect nosecone line to drogue chute (black) \checkbox
+    \item Wrap drogue shock lines around drogue chute, add two additional turns of the drogue line\checkbox
+    \item Fold remaining drogue line and nose cone line individualy in a figure eight pattern \checkbox
+    \item Lay drogue chute and folded lines on top off main chute\checkbox
+    \item Place drogue tube on top off main tube and make sure TRS charging connector is connected\checkbox
+    \item Temporarily tape together with masking tape (mark tape as RBF)\checkbox
+    \item Connect clampband to clampband line \checkbox
+    \item Mount payload bay to recovery section \checkbox
+    \item Connect RCU to PMU (CAN/Power) \checkbox
+    \item Mount main battery with zip ties \checkbox
+    \item Mount backup battery with zip ties \checkbox
+    \item Insert temporary RBF pin into PMU\checkbox
+    \item Mount PMU \checkbox
+    \item Connect cameras to PMU \checkbox
+    \item Connect payload cable to PMU \checkbox
+    \item Zip tie cables \checkbox
+
+    \starttask{Non-energetic Rocket Assembly}{\hphantom{a}}
+    \item \label{rocket_non_energetic_start} Check if cable management is done properly and fix if necessary\checkbox
+    \item Make photos of internals for Launch Readiness Review\checkbox
+    \item Mount airframe-fincan coupler to propulsion system (4 M4x10 screws)\checkbox
+    \item Rotate propulsion system until connectors are on top \checkbox
+    \item Ensure upper rail button T-nut is mounted to propulsion system \checkbox
+    \item Slot propulsion system into body tube \checkbox
+    \item Verify alignment of ox pressurant fill and vent to the respective openings in the body tube \checkbox
+    \item Screw body tube to thrust structure (4 M4x10 screws)\checkbox
+    \item Screw body tube to airframe-fincan coupler (4 M4x8 screws) \checkbox
+    \item Rotate fuel tank assembly to correct orientation (threaded inserts aligned with holes in body tube) \checkbox
+    \item Screw fuel tank assembly in place (8 M4x8 screws) \checkbox
+    \item Mount upper rail button to T-nut using threadlocker\checkbox
+    \item Align fuel pressurant fill with opening in body tube \checkbox
+    \item Verify temporary RBF is inserted\checkbox
+    \item Connect linecutters to Altimax \checkbox
+    \item Verify batteries connected properly \checkbox
+    \item Verify Altimax connected properly \checkbox
+    \item Verify RCU connected properly \checkbox
+    \item Verify SD-cards in cameras \checkbox
+    \item Verify payload inserted and connected properly \checkbox
+    \item Verify if clampband screws are tight \checkbox
+    \item Remove runcam covers \checkbox
+    \item Connect propulsion cables to recovery section \checkbox
+    \item Connect umbilical cables to recovery section \checkbox
+    \item Slot recovery system into body tube and fix with 8 screws\checkbox
+    \item Verify that the cameras and RBF pin align with the holes\newline in the airframe.\checkbox
+    \item Cover rocket with opaque cover\checkbox
+    \item Swap temporary RBF pin with final RBF pin\checkbox
+    \item \label{rocket_non_energetic_end} Report non-energetic rocket assembly completed to Mission Lead.\checkbox
+    
+    \starttask{Energetic Rocket Assembly}{\hphantom{a}}
+    \item \label{rocket_energetic_start} Prepare tools for assembly \checkbox
+    \begin{enumerate}
+        \item Ibus size 2.5 \checkbox
+        \item Torx size 6 \checkbox
+        \item Torx size 8 \checkbox
+        \item Torx size 20 \checkbox
+        \item Face shields \checkbox
+    \end{enumerate}
+    \item Remove nosecone from upper clampband\checkbox
+    \item Put upper clampband onto lower clampband (ensure clampband line is not pinched) \checkbox
+    \item Prepare drogue deployment line \checkbox  
+    \item Thread drogue deployment line through drogue deployment linecutter \checkbox
+    \item Open clampband tensioner \checkbox
+    \item Thread drogue deployment line through both clampband halves and knot together (as tight as possible)\checkbox
+    \item Thread clampband line inbetween the couplers \checkbox
+    \item Put on face shields \checkbox
+    \item Temporarely affix clampband to coupler with zip tie \checkbox
+    \item Connect clampband halves with tensioner (T6) \checkbox
+    \item Ensure clampband halves are connectet securely \checkbox
+    \item Remove zip tie \checkbox
+    \item Tighten clampband (H2.5) \checkbox
+    \item \label{rocket_energetic_end} Mount RBF zip tie around clampband \checkbox
+    
+    \item Report energetic rocket assembly complete to Mission Lead.\checkbox
+    
+    \starttask{Final Rocket Assembly}{\hphantom{a}}
+    \item \label{rocket_final_start} Connect TRS battery to charger \checkbox
+    \item Connect TRS battery to TRS \checkbox
+    \item Secure TRS battery to TRS with masking tape \checkbox
+    \item Install TRS in TRS tube (T20) \checkbox
+    \item Tension slingshot \checkbox
+    \item Mount slingshot retainer (T8) \checkbox
+    \item Remove RBF tape \checkbox
+    \item Mount nosecone onto upper clampband \checkbox
+    \item Secure nosecone (8 screws, H2.5) \checkbox
+    \item Install RBF zip tie on clampband \checkbox
+    \item Connect nosecone (including upper clampband coupler) to nosecone line (red-black)\checkbox
+    
+    \starttask{Igniter Installation}{\hphantom{a}}
+    \item Securely screw in Igniters.\checkbox
+    \item Connect igniters to igniter cables.\checkbox
+    \item Properly cable manage igniter cables.\checkbox
+    
+    \item \label{rocket_final_end} Report Rocket Final Assembly comlete to Mission Lead\checkbox
+
+\label{end_section_rocket}
+\end{enumerate}

@@ -1,0 +1,36 @@
+\newpage
+\setcounter{page}{1}
+\lhead{MC}
+\lfoot{\thepage / \pageref{end_section_lead}}
+\section*{Mission Control}
+\input{0_Legend}
+
+\begin{enumerate}[label=P\arabic*.]
+    \item READ THE WHOLE CHECKLIST BEFORE STARTING \checkbox
+    
+    \starttask{Required tools, materials and personnel}{\hphantom{a}}
+    \item \label{mc_personnel} Personnel
+        \begin{enumerate}[label*=\arabic*.]
+            \item Mission Control: Markus Pinter\leftcheckbox
+        \end{enumerate} 
+    \item \label{mc_materials} Materials
+        \begin{enumerate}[label*=\arabic*.]
+            \item 2x External Screen + Power Adapter \& Cable\leftcheckbox
+            \item 16-port Switch + Power Adapter\leftcheckbox
+            \item Ethernet Cables (1x\SI{10}{\meter}, 2x short (1-\SI{2}{\meter}), 1x\SI{20}{\meter})\leftcheckbox
+            \item Cable Reel\leftcheckbox
+            \item 6-port power distributor\leftcheckbox
+            \item Mission Control Laptop + Charger + Mouse\leftcheckbox
+            \item Directed Radio Link dish\leftcheckbox
+        \end{enumerate} 
+        
+    \starttask{Mission Control Prep}{\hphantom{a}}
+    \item \label{mc_prep_start} Get power with cable reel and power distributor\checkbox
+    \item Set up external screens, laptop and switch.\checkbox
+    \item Connect the radio link and laptop to switch.\checkbox
+    \item Request On-Day electronics check from Pad crew.\checkbox
+    \item Verify bandwidth with iperf. Min: 10Mb/s, Target: >50Mb/s, if insufficient, request realignment.\leftcheckbox
+    \item Start software infrastructure.\checkbox
+    \item Confirm network with sensor readings and actuator movements.\checkbox
+    \item \label{mc_prep_end} Check Holddown Servo start and end point.\checkbox
+\end{enumerate}

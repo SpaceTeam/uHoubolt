@@ -1,0 +1,164 @@
+\newpage
+\setcounter{page}{1}
+\lhead{Pad}
+\lfoot{\thepage / \pageref{end_section_pressurant}}
+\section*{Pad}
+\input{0_NoteMissionControl}
+\input{0_Legend}
+
+IF A CHECK FAILS AND NO OTHER MEASURE IS SPECIFIED OR THE SPECIFIED MEASURE FAILS TOO, INFORM LEAD AND AWAIT FURTHER INSTRUCTIONS
+
+\begin{enumerate}[label=P\arabic*.]
+
+    \item READ THE WHOLE CHECKLIST BEFORE STARTING \checkbox
+
+    \starttask{Required tools, materials and personnel}{\hphantom{a}}
+    \item \label{pad_personnel} Personnel
+        \begin{enumerate}[label*=\arabic*.]
+            \item Pad 1: Daniel Frank
+            \item Pad 2: Michael Pohn
+            \item Pad 3: Florian Dellekart
+            \item Pad 4: Bernhard Hansemann
+            \item Documentation: Liana Gferer
+        \end{enumerate}
+    \item \label{pad_tools} Tools \checkbox
+        \begin{enumerate}[label*=\arabic*.]
+            \item Hammer\leftcheckbox
+            \item T10 Key\leftcheckbox
+            \item T30 Key\leftcheckbox
+            \item Allen Key \SI{2.5}{\milli\meter}\leftcheckbox
+            \item Ethanol Fueling Syringe\leftcheckbox
+            \item Tweezers\leftcheckbox
+            \item Fire extinguisher\leftcheckbox
+        \end{enumerate}
+    \item \label{pad_materials} Materials \checkbox
+        \begin{enumerate}[label*=\arabic*.]
+            \item Red pendant\leftcheckbox
+            \item Ice or dry ice (min. \SI{3}{\kilo\gram})
+            \item Oxidizer bottle mounting plate\leftcheckbox
+            \item Heat exchanger tube\leftcheckbox
+            \item Oxidizer Bottle\leftcheckbox
+            \item Ethanol Bottles (\SI{2}{\liter})\leftcheckbox
+            \item Flame Diverter\leftcheckbox
+            \item Rocket (without fincan)\leftcheckbox
+            \item Fincan\leftcheckbox
+            \item 8x black M4 screws(4x8 mm, 4x10 mm) for fincan \leftcheckbox
+            \item RBF umbilical locking device \leftcheckbox
+            \item TRS-box (ALWAYS stays with rocket) \leftcheckbox
+        \end{enumerate} 
+    
+    \starttask{On-day pad prep}{\hphantom{a}}
+    \item \label{pad_on_day_start} If not already at correct position, place trailer at final launch site.\checkbox
+    \item Recheck position and angles of launch rail and realign if necessary.\checkbox
+    \item Voice radio check with MC. \checkbox
+    \item Open server rack and remove cover from bottom air intake.\checkbox
+    \item Remove masking tape from cable outlet at the back.\checkbox
+    \item Connect server rack power distributor to power.\checkbox
+    \item Set up pad cams if not already done. \checkbox
+    \item Verify that all Ethernet and power cables are connected correctly.\checkbox
+    \item Start server if not already starting automatically.\checkbox
+    \item Start heating hot water reservoir.\checkbox
+    \item Start cooling cold water reservoir, refill ice periodically until \ref{vacate_pad}.\checkbox
+    \item Place oxidizer bottle next to trailer \checkbox
+    \item Install mounting plate on oxidizer bottle \checkbox
+    \item Install Ox bottle on tanking cart \checkbox
+    \item Install heat exchanger on oxidizer bottle \checkbox
+    \item Connect water hoses to heat exchanger\checkbox
+    \item Install Pressurant bottle\checkbox
+    \item Install flame diverter\checkbox
+    \item Report on-day pad preparation complete to Mission Lead\checkbox
+    
+    \starttask{On-day electronics check}{\hphantom{a}}
+    \item \label{pad_on_day_elec_start} Wait for MC to start aligning directed radio link.\checkbox
+    \item \underline{MC: check functionality of following individual sensors,}\newline\underline{no software errors}
+      \begin{enumerate}[label*=\arabic*.]
+            \item Hot water temperature \leftcheckbox
+            \item Cold water temperature \leftcheckbox
+            \item Mantle water temperature \leftcheckbox
+            \item Pressurant pressure \leftcheckbox
+            \item Ox pressure \leftcheckbox
+      \end{enumerate}
+  \item \underline{MC:
+    check functionality of actuators (verify movement and calibration)}
+    \newline\underline{Software reports no errors and visual inspection of actuator movement}
+      \begin{enumerate}[label*=\arabic*.]
+            \item Ox tanking valve \leftcheckbox
+            \item Ox vent valve \leftcheckbox
+            \item Pressurant tanking valve \leftcheckbox
+            \item Pressurant vent valve \leftcheckbox
+            \item Umbilical retract \leftcheckbox
+            \item Clean water pump intake filters \leftcheckbox
+            \item Hot water pump \leftcheckbox
+            \item Cold water pump \leftcheckbox
+            \item Holddown \leftcheckbox
+      \end{enumerate}
+    
+    \item Report On-Day electronics check complete to Mission Lead.\checkbox
+    \item \label{pad_on_day_elec_end} Vacate area.\checkbox
+    
+    \starttask{Rocket mounting}{\hphantom{a}}
+    \item \label{pad_rocket_mounting_start} Pad 1 \& 2 get rocket, fincan and TRS-box to pad.\checkbox
+    \item Remove sliding block from launch rail.\checkbox
+    \item Verify holddown open, if not request MC to open it.\checkbox
+    \item Slide rocket (without fincan) onto rail (from bottom).\checkbox
+    \item Secure rocket with sliding block underneath lower rail button.\checkbox
+    \item Secure holddown above lower rail button.\checkbox
+    \item Verify holddown is closed and locked.\checkbox
+    \item Swivel strongback into position \checkbox
+    \item Attach RBF umbilical locking device \checkbox
+    \item Remove cover from pressurant loading ports.\checkbox
+    \item Connect Ox pressurant umbilical.\checkbox
+    \item Connect Fuel pressurant umbilical.\checkbox
+    \item Verify pressurant umbilicals' mechanical connection (pull umbilical), reconnect if loose\checkbox
+    \item Connect Electrical umbilical and secure with masking tape.\checkbox
+    \item \underline{Request active charging.}\checkbox
+    \item Pull RBF Pin halfway\checkbox
+    \item Cover rocket in space blanket\checkbox
+    \item \label{pad_rocket_mounting_end} Report rocket mounting completed to Mission Lead\checkbox
+    
+    \starttask{Fueling}{\hphantom{a}}
+    \item \label{pad_fueling_start} Wait for fueling request from Lead.\checkbox
+    \item Verify fuel main valve is closed.\checkbox
+    \item Fill fueling syringe with \SI{950}{\milli\liter} ethanol\checkbox
+    \item Fuel \SI{900}{\milli\liter} \checkbox
+    \item Clean up spills\checkbox
+    \item Mount fincan to rocket\checkbox
+    \item Secure fincan with 8 screws\checkbox
+    \item Remove cover from oxidizer loading port\checkbox
+    \item Connect Ox umbilical\checkbox
+    \item Verify Ox umbilical mechanical connection (pull umbilical), reconnect if loose\checkbox
+    \item \label{pad_fueling_end} Report that fueling is completed to Mission Lead.\checkbox
+
+    \starttask{Final Preps}{\hphantom{a}}
+    \item \label{pad_final_preps_start} Wait for Mission Lead to request Final Preps\checkbox
+    \item Unfold emergency umbilical release line and extend \newline line away from pad \checkbox
+    \item Clean intake filters for water pumps \checkbox
+    \item Put on safety glasses, gloves, hearing protection and long sleeved shirt and trousers.\checkbox
+    \item Verify holddown closed\checkbox
+    \item Start pad cams\checkbox
+    \item Request Pressurization clearance from EuRoC LCO\checkbox
+    \item Raise red pendant\checkbox
+    \item \label{open_ox} Open Ox bottle\checkbox
+    \item Check for leaks (feel for air current on connections), if found inform Mission Lead, close bottle, retighten connection and goto \ref{open_ox}\checkbox
+    \item \label{open_press} Open Pressurant bottle\checkbox
+    \item Check for leaks (feel for air current on connections), if found inform MC, close bottle, retighten connection and goto \ref{open_press}\checkbox
+    \item Read out pressurant bottle pressure and forward to Mission Lead.\checkbox
+    \item Start flight on TRS\checkbox
+    \item Remove RBF zip tie \checkbox
+    \item Remove RBF umbilical locking device \checkbox
+    \item Pull RBF pin\checkbox
+    \item Report Final preps complete to Mission Lead.\checkbox
+    \item \label{vacate_pad} Vacate pad\checkbox
+    
+    \starttask{GSE Safing}{\hphantom{a}}
+    \item \label{pad_gse_safing_start} Verify no heat sources except heating element\checkbox
+    \item Close Ox bottle\checkbox
+    \item Close Pressurant bottle.\checkbox
+    \item Unplug heating element.\checkbox
+    \item Verify heating cycle is deactivated.\checkbox
+    \item \label{pad_gse_safing_end} Vacate area.\checkbox
+    \item Report GSE Safing done to Mission Lead.\checkbox
+
+    
+\label{end_section_pressurant}
+\end{enumerate}

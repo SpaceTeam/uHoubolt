@@ -1,0 +1,90 @@
+\documentclass{article}
+\usepackage{enumitem,amssymb}
+\usepackage{tcolorbox}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{tgbonum}
+\usepackage[normalem]{ulem}
+\usepackage{float} %to place figures where they are in the source with [H]
+
+\newcommand*{\TakeFourierOrnament}[1]{{%
+\fontencoding{U}\fontfamily{futs}\selectfont\char#1}}
+\newcommand*{\danger}{\TakeFourierOrnament{66}}
+\color{black}
+
+\usepackage[includehead,includefoot]{geometry}
+ \geometry{
+ a4paper,
+ left=10mm,
+ top=20mm,
+ right=80mm,
+ bottom=20mm
+ }
+
+\usepackage{fancyhdr}
+\fancyhf{µHoubolt EuRoC Launch Procedures}
+\fancyfoot[R]{}
+\rhead{v2.3}
+\pagestyle{fancy}
+%\lhead{\LaTeX{} tutorials}
+ 
+\newcommand\checkbox[0]{ \hfill $\msquare$}
+\newcommand\leftcheckbox[0]{ \hfill $\msquare$\hphantom{abcd}}
+\newcommand\warningcheckbox[0]{ \hfill $\msquare$\danger}
+\newcommand\warningleftcheckbox[0]{ \hfill $\msquare$\danger\hphantom{cd}}
+\newcommand\twoCheckboxes[0]{ \hfill Ox$\msquare$ Fuel$\msquare$}
+\newcommand\twoLeftCheckboxes[0]{ \hfill Ox$\msquare$ Fuel$\msquare$\hphantom{abcd}}
+\newcommand\timestampcheckbox[0]{\hfill\dotuline{\hphantom{00:00:}}\hphantom{a}$\msquare$}
+
+
+\newcommand\underlined[0]{\hphantom{ab}\dotfill\hphantom{abcd}}
+\newcommand\underlinedWithBrackets[0]{\hphantom{ab}\dotfill(\hphantom{abcde})\hphantom{abcd}}
+\newcommand\shortunderlined[0]{\hphantom{ab}\dotfill\hphantom{a}}
+\newcommand\task[1]{\hrulefill\hphantom{ab} #1 \hphantom{ab}\hrulefill}
+\newcommand\starttask[2]{\bigskip \hrulefill \break \textbf{#1} \hfill\break \textbf{#2}}
+\newcommand\codeblock[1]{{\fontfamily{qcr}\selectfont #1 }}
+
+
+\usepackage{scalerel,amssymb}
+\def\msquare{\mathord{\scalerel*{\Box}{gX}}}
+
+\usepackage{siunitx}
+\usepackage{hyperref}
+%ToDo List
+% finish pressurant checklist
+% check everything
+% 
+%
+%
+
+
+
+\title{µHoubolt Launch Procedures}
+\author{TU Wien Space Team}
+\date{February 2021}
+
+\begin{document}
+%{\fontfamily{qcr}\selectfont
+%{\fontfamily{phv}\selectfont
+%{\fontfamily{qag}\selectfont
+{\fontfamily{qhv}\selectfont
+
+%\maketitle
+%\clearpage
+\input{1_Lead}
+ \cleardoublepage
+\input{2_PadPreparation}
+ \cleardoublepage
+\input{3_Rocket}
+ \cleardoublepage
+\input{4_Pad}
+ \cleardoublepage
+\input{5_Mission_Control}
+ \cleardoublepage
+\input{6_Igniter_Prep}
+ \cleardoublepage
+\input{7_Streaming}
+ \cleardoublepage
+}
+\end{document}

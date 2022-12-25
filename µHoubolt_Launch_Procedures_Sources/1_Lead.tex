@@ -1,0 +1,179 @@
+\newpage
+\setcounter{page}{1}
+\lhead{Lead}
+\lfoot{\thepage / \pageref{end_section_lead}}
+\section*{Lead}
+\input{0_NoteMissionControl}
+\input{0_Legend}
+
+\begin{enumerate}[label=L\arabic*.]
+    \item READ THE WHOLE CHECKLIST BEFORE STARTING \checkbox
+    
+    \starttask{Required tools, materials and personnel}{\hphantom{a}}
+    \item \label{lead_personnel} Personnel
+        \begin{enumerate}[label*=\arabic*.]
+            \item Mission Lead: Georg Mikula
+        \end{enumerate}
+    \item \label{lead_tools} Tools
+        \begin{enumerate}[label*=\arabic*.]
+            \item Pen\checkbox
+        \end{enumerate}
+    
+    \starttask{Pre-Launch Prep}{\hphantom{a}}
+    \item Instruct Pad Prep personnel to start with Pad Prep checklist. (\ref{pad_prep_start}-\ref{pad_prep_end})\checkbox
+    \item Instruct Rocket prep personnel to start non-energetic rocket assembly (\ref{rocket_non_energetic_start}-\ref{rocket_non_energetic_end}).\checkbox
+    
+    \starttask{Launch Day}{\hphantom{a}}
+    \item Request igniter preparation(\ref{rocket_prep_igniters_start}-\ref{rocket_prep_igniters_end}).\checkbox
+    \item Instruct Pad prep personnel to start with Pad prep checklist (\ref{pad_prep_start}-\ref{pad_prep_end}) if not already done, otherwise instruct Pad personnel to start On-Day pad prep checklist (\ref{pad_on_day_elec_start}-\ref{pad_on_day_elec_end}).\checkbox
+    \item Request Mission Control Area Clearance from EuRoC staff, if clearance is given, instruct MC preps (\ref{mc_prep_start}-\ref{mc_prep_end}).\checkbox
+    
+    
+    \item Wait for non-energetic rocket assembly completion (\ref{rocket_non_energetic_end}.\checkbox
+    \item Request energetics rocket assembly clearance from EuRoC staff.\checkbox
+    \item Instruct energetics rocket assembly (\ref{rocket_energetic_start}-\ref{rocket_energetic_end}).\checkbox
+    \item Wait for pad prep completion (\ref{pad_prep_end}).\checkbox
+    \item Wait for energetics rocket assembly(\ref{rocket_energetic_end}).\checkbox
+    \item Request LRR.\checkbox
+    \item PASS LRR.\checkbox
+    \item If MC clearance wasn't given before, request clearance from EuRoC staff and if given, instruct MC preps (\ref{mc_prep_start}-\ref{mc_prep_end}).\checkbox
+    \item Wait for On-Day electronics check to be completed (\ref{pad_on_day_elec_end}).\checkbox
+    \item Request clearance for final rocket assembly from EuRoC staff.\checkbox
+    \item Request final rocket assembly (\ref{rocket_final_start}-\ref{rocket_final_end}).\checkbox
+    \item Request rocket mounting from Pad personnel (\ref{pad_rocket_mounting_start}-\ref{pad_rocket_mounting_end}).\checkbox
+    \item Request Fueling from pad personnel (\ref{pad_fueling_start}-\ref{pad_fueling_end}).\checkbox
+    \textcolor{gray}{\begin{itemize}
+        \item  Wait for fueling request from Lead.\leftcheckbox
+        \item Verify fuel main valve is closed.\leftcheckbox
+        \item Fill fueling syringe with \SI{950}{\milli\liter} ethanol\leftcheckbox
+        \item Fuel \SI{900}{\milli\liter} \leftcheckbox
+        \item Clean up spills\leftcheckbox
+        \item Mount fincan to rocket\leftcheckbox
+        \item Secure fincan with 8 screws\leftcheckbox
+        \item Remove cover from oxidizer loading port\leftcheckbox
+        \item Connect Ox umbilical\leftcheckbox
+        \item Verify Ox umbilical mechanical connection (pull umbilical), reconnect if loose\leftcheckbox
+        \item Report that fueling is completed to Mission Lead.\leftcheckbox
+    \end{itemize}}
+    
+    \item \underline{Clear Flash}\checkbox
+    \newpage
+    \starttask{Oxidizer Filling}{\hphantom{a}}
+    \item Verify ox tanking closed\checkbox    
+    \item Verify ox vent open\checkbox    
+    \item Verify pressurant tanking closed\checkbox    
+    \item Verify pressurant vent open\checkbox
+    \item Cycle Holddown servo (open, then close)\checkbox
+    \item Preliminary internal Go/NoGo Poll\checkbox
+        \begin{enumerate}[label*=\arabic*.]
+            \item Pad \leftcheckbox
+            \item Mission Control \leftcheckbox
+        \end{enumerate}
+    \item Wait for Launch Window imminent (\SI{30}{\minute})\checkbox
+    \item Internal Go/NoGo Poll\checkbox
+        \begin{enumerate}[label*=\arabic*.]
+            \item Pad \leftcheckbox
+            \item Mission Control \leftcheckbox
+        \end{enumerate}
+    \item Request Final Preps from pad personnel (\ref{pad_final_preps_start}-\ref{vacate_pad}).\checkbox
+    \textcolor{gray}{\begin{itemize}
+        \item Wait for Mission Lead to request Final Preps\leftcheckbox
+        \item Unfold emergency umbilical release line and extend line away from pad \leftcheckbox
+        \item Clean intake filters for water pumps \leftcheckbox
+        \item Put on safety glasses, gloves, hearing protection and long sleeved shirt and trousers.\leftcheckbox
+        \item Verify holddown closed\leftcheckbox
+        \item Start pad cams\leftcheckbox
+        \item Request Pressurization clearance from EuRoC LCO\leftcheckbox
+        \item Raise red pendant\leftcheckbox
+        \item Open Ox bottle\leftcheckbox
+        \item Open Pressurant bottle\leftcheckbox
+        \item Read out pressurant bottle pressure and forward to\newline Mission Lead.\leftcheckbox
+        \item Start flight on TRS\leftcheckbox
+        \item Remove RBF zip tie \leftcheckbox
+        \item Remove RBF umbilical locking device \leftcheckbox
+        \item Pull RBF pin\leftcheckbox
+        \item Report Final preps complete to Mission Lead.\leftcheckbox
+        \item Vacate pad\leftcheckbox
+    \end{itemize}}
+    
+%    \item Check igniters deactivated\checkbox    
+%    \item Install igniters \checkbox 
+%    \begin{itemize}
+%        \item Use fresh PTFE seal\leftcheckbox
+%        \item E-match side up\leftcheckbox
+%        \item Note which igniter (0/1/2/…) installed where (A/B)\leftcheckbox
+%        \item Fully tighten screws\leftcheckbox
+%        \item Cable manage igniters with cable tie or aluminium tape\leftcheckbox
+%    \end{itemize}
+
+    \item \underline{Verify igniter continuity. Igniter indicators should be yellow in ECUI} \checkbox
+    
+    \item Verify ox main closed\checkbox    
+    \item Set Supercharge 30bar, Hysteresis 1bar\checkbox    
+    \item Enable Supercharge pressure control\checkbox    
+    \item Close pressurant vent\checkbox
+    
+    \item Pre-Pressurize tanks\checkbox
+     \begin{enumerate}[label*=\arabic*.]
+            \item Open pressurant tanking \leftcheckbox
+            \item After supercharge opens, close pressurant tanking immediately \leftcheckbox
+      \end{enumerate}
+    \item Close ox vent\checkbox
+    \item Open ox tanking over a duration of \SI{10}{\second}\checkbox
+    \item Activate heating cycle\checkbox
+    \item After first plume, close ox tanking immediately\checkbox
+    \item Activate cooling cycle\checkbox
+    \item \label{ox_top_off} Top off Oxidizer
+        \begin{enumerate}[label*=\arabic*.]
+            \item Wait for stable vent frequency \leftcheckbox
+            \item Open ox tanking over a duration of \SI{10}{\second} \leftcheckbox
+            \item After first plume, close ox tanking immediately \leftcheckbox
+        \end{enumerate}
+    \item In case of Hold or Delay of launch window, repeat \ref{ox_top_off} until final GO.
+    \item Open Ox vent\checkbox
+    
+    \item Wait for Launch Window\checkbox
+%    \item Enable internal cameras \checkbox
+    \item Set Supercharge 60bar, Hysteresis 1bar\checkbox
+    \item Open pressurant tanking\checkbox
+    \item Wait for stable pressures\checkbox
+    \item Close pressurant tanking\checkbox    
+    \item Open pressurant vent \checkbox
+    
+    \starttask{Launch}{\hphantom{a}}
+    \item Go/NoGo for launch from EuRoC staff\newline (TRS camera points to receiver)\checkbox
+    \item Activate umbilical retract\checkbox
+    \item Verify clean separation visually (network camera)\checkbox
+    %\item Deactivate charging.\checkbox
+    \item Launch\checkbox
+    
+    \newpage
+    \starttask{Safe GSE}{\hphantom{a}}
+    \item \label{lead_gse_safing} Request GSE Safing from Pad crew (\ref{pad_gse_safing_start}-\ref{pad_gse_safing_end}).\checkbox
+    \item Open ox tanking\checkbox
+    \item Open pressurant tanking\checkbox
+    \item Verify all pressures are ambient\checkbox
+    \item Announce "safe state"\checkbox
+    \item Stop network cameras\checkbox
+    \item Stop pad cameras\checkbox
+ 
+    \starttask{Safe GSE and Rocket after Abort}{\hphantom{a}}
+    Rocket is fully pressurized
+    \item Open supercharge\checkbox
+    \item Close supercharge after pressure in tank is ambient\checkbox
+    \item Open fuel main OR Wait for fuel bleed to vent\checkbox
+    \item Go to \ref{lead_gse_safing} \checkbox
+    
+
+
+%    \starttask{Recycle after Abort}{\hphantom{a}}
+    
+    
+%    \item \checkbox
+%    \item \checkbox
+%    \item \checkbox
+%    \item \checkbox
+%    \item \checkbox
+
+\label{end_section_lead}
+\end{enumerate}
