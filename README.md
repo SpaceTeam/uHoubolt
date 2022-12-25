@@ -14,8 +14,8 @@ While these ressources are not very well organized or documented, they should co
 
 ### Documantation
 - [Website](spaceteam.at/uhb)
-- [EuRoC Technical Report](TechnicalReport_EuRoC2022.pdf)
-- Checklists
+- [EuRoC Technical Report](TechnicalReport_EuRoC2022.pdf) and [LaTeX sources]()
+- [Launch Procedures](µHoubolt_Launch_Procedures.pdf) and [LaTeX sources](µHoubolt_Launch_Procedures_Sources)
 - BOM
 
 ### Simulation
