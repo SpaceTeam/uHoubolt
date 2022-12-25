@@ -8,9 +8,24 @@ This repository serves as an overview, containing some project ressources and li
 ## Overview
 
 ## Ressources
-- Website spaceteam.at/uhb
-- Technical Report
+
+### Documantation
+- [Website](spaceteam.at/uhb)
+- [EuRoC Technical Report](TechnicalReport_EuRoC2022.pdf)
 - Checklists
-- Repos
+- BOM
+
+### Simulation
+- [OpenRocket Liquid Engine Generator](https://github.com/SpaceTeam/ORLEG)
+- Simulations
+
+### Mechanical
+- CAD Rocket
+- CAD/Description Launch Pad
+
+### Software
+- [PnID KiCAD library](https://github.com/SpaceTeam/pnid-lib)
+
+### Electronics + Firmware
 
 ## Contact
