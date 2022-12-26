@@ -21,7 +21,7 @@ While these ressources are unfortunately not very well organized nor documented,
 
 ### Simulation
 - [OpenRocket Liquid Engine Generator](https://github.com/SpaceTeam/ORLEG)
-- Simulations
+- [OpenRocket Simulation](Simulation_OpenRocket)
 
 ### Mechanical
 - CAD Rocket
