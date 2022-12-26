@@ -10,7 +10,7 @@ In case of any questions, please feel free to contact [daniel.frank@spaceteam.at
 ## Overview
 
 ## Ressources
-While these ressources are unfortunately not very well organized nor documented, they should contain everything needed to replicate this project.
+While unfortunately these ressources are for a large part not very well organized nor documented (sorry!), they should contain everything needed to replicate this project.
 
 ### Documantation
 - [Website](spaceteam.at/uhb)
@@ -47,5 +47,4 @@ While these ressources are unfortunately not very well organized nor documented,
 - [PnID KiCAD library](https://github.com/SpaceTeam/pnid-lib)
 
 ## Known Issues
-Some of the ressources linked above contain specific known issues. All others (that we remembered)
- are listed here.
+Some of the ressources linked above contain known issues spcific to them. The others are listed here.
