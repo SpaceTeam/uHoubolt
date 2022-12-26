@@ -13,7 +13,7 @@ In case of any questions, please feel free to contact [uhb@spaceteam.at](mailto:
 While unfortunately these ressources are for a large part not very well organized nor documented (sorry!), they should contain everything needed to replicate this project.
 
 ### Documentation
-- [Website](spaceteam.at/uhb)
+- [Website](https://spaceteam.at/uhb)
 - [Technical Report](TechnicalReport_EuRoC2022.pdf) and [LaTeX sources](TechnicalReport_EuRoC2022_Sources)
 - [Launch Procedures](µHoubolt_Launch_Procedures.pdf) and [LaTeX sources](µHoubolt_Launch_Procedures_Sources)
 - [BOM](BOM)
