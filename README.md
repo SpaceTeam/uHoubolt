@@ -5,7 +5,7 @@ To enable other student or amateur teams to benefit from our developments, and m
 
 This repository serves as an overview, containing some project ressources and linking to many others.
 
-In case of any questions, please feel free to contact [daniel.frank@spaceteam.at](mailto:daniel.frank@spaceteam.at).
+In case of any questions, please feel free to contact [uhb@spaceteam.at](mailto:uhb@spaceteam.at).
 
 ## Overview
 
