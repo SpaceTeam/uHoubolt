@@ -48,5 +48,4 @@ While these ressources are unfortunately not very well organized nor documented,
 
 ## Known Issues
 Some of the ressources linked above contain specific known issues. All others (that we remembered)
- are listed here:
- - 
+ are listed here.
