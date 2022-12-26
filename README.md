@@ -75,3 +75,4 @@ Some of the ressources linked above contain known issues spcific to them. The ot
 - Recovery shock absorbers worked well but need more testing & characterization
 - Igniter breech PTFE seals annoying, elastomer o-rings would probably be better
 - Igniter manufacturing nconsistent and depentdent on experience
+- Umbilical decoupling not reliable enough
