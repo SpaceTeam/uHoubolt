@@ -45,3 +45,8 @@ While these ressources are unfortunately not very well organized nor documented,
 - [ECUI Theming](https://github.com/SpaceTeam/SpaceTeamTheme)
 - [ECUI Config](https://github.com/SpaceTeam/config_ecui)
 - [PnID KiCAD library](https://github.com/SpaceTeam/pnid-lib)
+
+## Known Issues
+Some of the ressources linked above contain specific known issues. All others (that we remembered)
+ are listed here:
+ - 
