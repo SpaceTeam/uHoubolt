@@ -25,7 +25,7 @@ While unfortunately these ressources are for a large part not very well organize
 - [OpenRocket Simulation](Simulation_OpenRocket)
 
 ### Mechanical
-- CAD Rocket
+- [Rocket CAD](CAD)
 - CAD/Description Launch Pad
 
 ### Electronics + Firmware
