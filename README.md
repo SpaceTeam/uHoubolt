@@ -2,6 +2,7 @@
 µHoubolt (µHb for short) is an Ethanol/N2O liquid rocket sucessfully flown at EuRoC 2022. It is capable of reaching an altitude of 3km with a 1kg payload, with a lift-off mass of only 12kg and a length of 2m.
 
 To enable other student or amateur teams to benefit from our developments, and maybe even base their own rocket design on µHoubolt, all design ressources are available as open source/hardware.
+To encurage further sharing of work based on this, licenses that require you to release modifications under the same licenses are used. If these don't work for you for whatever reason, please feel free to contact us (email below) and we will find a solution.
 
 This repository serves as an overview, containing some project ressources and linking to many others.
 
@@ -50,12 +51,12 @@ While unfortunately these ressources are for a large part not very well organize
 Some of the ressources linked above contain known issues spcific to them. The others are listed here in no particular order.
 - Documentation & procedures insufficient
 - Fill system vent not great (?)
-- Almost no load (or other) simulations done (officials at launch events don't like that)
+- Almost no load (or other) calculations/simulations done (officials at launch events don't like that)
 - Engine efficiency inconsistent over multiple manufactured parts, injector design probably quite susceptible to tolerances
 - COTS linecutters for recovery are expensive
 - Oxidizer fill valve leak (see flight report)
 - Drogue a little too small, large main shock
-- One piece cotton phenolic chamber abalates quickly and manufacturing is time consuming A graphite nozzle and phenolic paper chamber liner would probably be better.
+- One piece cotton phenolic chamber abalates quickly and manufacturing is time consuming. A graphite nozzle and phenolic cotton/paper chamber liner would probably be better.
 - Cable management not that good
 - Lift-off velocity quite low, safe but quite susceptible to wind, EuRoC officials unhappy
 - Launch pad oxidizer bottle installation difficult and unsafe
