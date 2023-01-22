@@ -27,17 +27,17 @@ While unfortunately these ressources are for a large part not very well organize
 - [Rocket CAD](https://github.com/SpaceTeam/uHoubolt_CAD)
 - CAD/Description Launch Pad
 
-### Electronics + Firmware
+### Electronics
 - [Radio Communication Unit KiCAD Project](https://github.com/SpaceTeam/uHoubolt_PCB_RCU)
 - [Power Management Unit KiCAD Project](https://github.com/SpaceTeam/uHoubolt_PCB_PMU)
 - [LiIon Charger KiCAD Project](https://github.com/SpaceTeam/uHoubolt_PCB_LiIon_Charger)
 - [Engine Control Unit KiCAD Project](https://github.com/SpaceTeam/uHoubolt_PCB_ECU)
 - [KiCAD Library](https://github.com/SpaceTeam/TXV_Library_PCB)
-- [RCU / PMU / ECU Firmware](https://github.com/SpaceTeam/firmware_liquids)
-- [Space Team Rocket Hardware Abstraction Layer](https://github.com/SpaceTeam/STRHAL)
-- [CAN Protocol](https://github.com/SpaceTeam/can_houbolt)
 
-### Software
+### Firmware & Software
+- [Space Team Rocket Hardware Abstraction Layer](https://github.com/SpaceTeam/STRHAL)
+- [RCU / PMU / ECU Firmware](https://github.com/SpaceTeam/firmware_liquids)
+- [CAN Protocol](https://github.com/SpaceTeam/can_houbolt)
 - [ECUI Web](https://github.com/SpaceTeam/web_ecui_houbolt)
 - [ECUI LL](https://github.com/SpaceTeam/llserver_ecui_houbolt)
 - [ECUI PnID](https://github.com/SpaceTeam/pnid_houbolt)
