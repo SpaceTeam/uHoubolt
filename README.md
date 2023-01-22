@@ -26,7 +26,7 @@ While unfortunately these ressources are for a large part not very well organize
 - [OpenRocket Simulation](Simulation_OpenRocket)
 
 ### Mechanical
-- [Rocket CAD](CAD)
+- [Rocket CAD](https://github.com/SpaceTeam/uHoubolt_CAD)
 - CAD/Description Launch Pad
 
 ### Electronics + Firmware
