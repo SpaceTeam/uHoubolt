@@ -9,7 +9,7 @@ This repository serves as an overview, containing some project ressources and li
 In case of any questions, please feel free to contact [uhb@spaceteam.at](mailto:uhb@spaceteam.at).
 
 ## Ressources
-While unfortunately these ressources are for a large part not very well organized nor documented (sorry!), they should contain everything needed to replicate this project.
+While unfortunately these ressources are for a large part not very well organized, documented or complete (sorry!), they should contain everything needed to replicate this project. In case something appears to be missing, please contact us.
 
 ### Documentation
 - [Website](https://spaceteam.at/uhb)
@@ -25,7 +25,6 @@ While unfortunately these ressources are for a large part not very well organize
 
 ### Mechanical
 - [Rocket CAD](https://github.com/SpaceTeam/uHoubolt_CAD)
-- CAD/Description Launch Pad
 
 ### Electronics
 - [Radio Communication Unit KiCAD Project](https://github.com/SpaceTeam/uHoubolt_PCB_RCU)
