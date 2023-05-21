@@ -16,7 +16,8 @@ While unfortunately these ressources are for a large part not very well organize
 - [Technical Report](TechnicalReport_EuRoC2022.pdf) and [LaTeX sources](TechnicalReport_EuRoC2022_Sources)
 - [Launch Procedures](µHoubolt_Launch_Procedures.pdf) and [LaTeX sources](µHoubolt_Launch_Procedures_Sources)
 - [BOM](BOM)
-- EuRoC 2022 Flight Report
+- [EuRoC 2022 Flight Report](FlightReport_EuRoC2022.pdf)
+- [EuRoC 2022 Flight Data](FlightData_EuRoC2022)
 - Media
 
 ### Simulation
