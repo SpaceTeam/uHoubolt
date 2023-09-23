@@ -33,18 +33,18 @@ While unfortunately these ressources are for a large part not very well organize
 - [Power Management Unit KiCAD Project](https://github.com/SpaceTeam/uHoubolt_PCB_PMU)
 - [LiIon Charger KiCAD Project](https://github.com/SpaceTeam/uHoubolt_PCB_LiIon_Charger)
 - [Engine Control Unit KiCAD Project](https://github.com/SpaceTeam/uHoubolt_PCB_ECU)
-- [KiCAD Library](https://github.com/SpaceTeam/TXV_Library_PCB)
+- [KiCAD Library](https://github.com/SpaceTeam/TXV_Library_PCB) All custom footprints and symbols of the Liquids projects should be included into this repositry.
 
 ### Firmware & Software
 - [Space Team Rocket Hardware Abstraction Layer](https://github.com/SpaceTeam/STRHAL) (in active development for later projects)
 - [RCU / PMU / ECU Firmware](https://github.com/SpaceTeam/firmware_liquids) (in active development for later projects)
 - [CAN Protocol](https://github.com/SpaceTeam/can_houbolt)
-- [ECUI Web](https://github.com/SpaceTeam/web_ecui_houbolt) (in active development for later projects)
-- [ECUI LL](https://github.com/SpaceTeam/llserver_ecui_houbolt) (in active development for later projects)
-- [ECUI PnID](https://github.com/SpaceTeam/pnid_houbolt) (in active development for later projects)
-- [ECUI Theming](https://github.com/SpaceTeam/SpaceTeamTheme)
-- [ECUI Config](https://github.com/SpaceTeam/config_ecui) (uHoubolt branch)
-- [PnID KiCAD library](https://github.com/SpaceTeam/pnid-lib)
+- [ECUI Web](https://github.com/SpaceTeam/web_ecui_houbolt) (in active development for later projects) The Web ECUI is a browser based user interface for our mission control. The repository contains the web server for hosting it on a machine (the same as the LLServer is running on). The ECUI can also embed PnIDs, the code for which is in another repository. Configuration is done via JSON files and pre-set configs for our various projects is stored in the config_ecui repository.
+- [ECUI LL](https://github.com/SpaceTeam/llserver_ecui_houbolt) (in active development for later projects) The Low-Level Server is a C++ server which handles incoming data from the Hardware via CAN-FD, talks to the Web based user interface and feeds the InfluxDB database and Grafana. Configuration is done via JSON files and pre-set configs for our various projects is stored in the config_ecui repository.
+- [ECUI PnID](https://github.com/SpaceTeam/pnid_houbolt) (in active development for later projects) The PnID can be run standalone or embedded within the ECUI. It loosely follows symbol standards for PnIDs from the industry, but is extended with symbols we need that don't really exist otherwise. The PnIDs are created in KiCad and then converted to HTML svg elements using a JavaScript based converter (which is also contained in this repository). The converter only supports KiCad 5 schematic/library combinations. Similar to the Web ECUI the configuration is done using JSON files, while pre-set configs for our various projects (including KiCad schematic files for the PnID conversion and behaviour configs) are contained in the config_ecui repository. The PnID symbol library for KiCad is contained in the PnID-Lib repository as this makes it better shareable and extensible between projects within Space Team.
+- [ECUI Theming](https://github.com/SpaceTeam/SpaceTeamTheme) The Space Team Theme is a set of CSS variables for both a light and dark theme that is supposed to be able to be used in all (web based) projects for Space Team. This allows different projects of Space Team to have a more coherent and similar look while offloading tedious things like colour choice and contrast checking from each individual project. It was originally developed to decouple theming (as in, colour choice) from the actual CSS of the PnID/ECUI, but expanded upon to be able to be easily imported in other projects with minimal setup to switch out color palettes on the fly and create a (somewhat) solid theming foundation. As of writing (2022-08-02) this is still very much a work in progress, as it's neither well made nor that easy to include and is currently very much µHoubolt/ECUI centered in code structure and UI choices for the included theme switcher.
+- [ECUI Config](https://github.com/SpaceTeam/config_ecui) (uHoubolt branch) The Config ECUI repo contains all relevant configuration and working files to run an instance of ECUI with an embedded PnID (aka: one full instance of our mission control) as well as the LLServer. To set up the interface for a different project (eg: switch from µHoubolt to Franz) different branches are used. Switching the branch in the config ecui and restarting LLServer and Web ECUI web server is sufficient to completely switch to all necessary setup of that other project.
+- [PnID KiCAD library](https://github.com/SpaceTeam/pnid-lib) The PnID KiCad lib contains many symbols ready to be used in our PnIDs with their needed data fields and all.
 
 ## Known Issues
 Some of the ressources linked above contain known issues spcific to them. The others are listed here in no particular order.
