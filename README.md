@@ -33,6 +33,7 @@ While unfortunately these ressources are for a large part not very well organize
 - [Power Management Unit KiCAD Project](https://github.com/SpaceTeam/uHoubolt_PCB_PMU)
 - [LiIon Charger KiCAD Project](https://github.com/SpaceTeam/uHoubolt_PCB_LiIon_Charger)
 - [Engine Control Unit KiCAD Project](https://github.com/SpaceTeam/uHoubolt_PCB_ECU)
+- [Umbilical Connection PCB KiCAD Project](https://github.com/SpaceTeam/uHoubolt_PCB_Oxfill_Cart_Adapter)
 - [KiCAD Library](https://github.com/SpaceTeam/TXV_Library_PCB) All custom footprints and symbols of the Liquids projects should be included into this repositry.
 
 ### Firmware & Software
