@@ -18,7 +18,7 @@ While unfortunately these ressources are for a large part not very well organize
 - [BOM](BOM) (Incomplete)
 - [EuRoC 2022 Flight Report](FlightReport_EuRoC2022.pdf)
 - [EuRoC 2022 Flight Data](FlightData_EuRoC2022)
-- Media
+- MISC Pictures & Videos
 
 ### Simulation
 - [OpenRocket Liquid Engine Generator](https://github.com/SpaceTeam/ORLEG)
@@ -36,14 +36,14 @@ While unfortunately these ressources are for a large part not very well organize
 - [KiCAD Library](https://github.com/SpaceTeam/TXV_Library_PCB)
 
 ### Firmware & Software
-- [Space Team Rocket Hardware Abstraction Layer](https://github.com/SpaceTeam/STRHAL)
-- [RCU / PMU / ECU Firmware](https://github.com/SpaceTeam/firmware_liquids)
+- [Space Team Rocket Hardware Abstraction Layer](https://github.com/SpaceTeam/STRHAL) (in active development for later projects)
+- [RCU / PMU / ECU Firmware](https://github.com/SpaceTeam/firmware_liquids) (in active development for later projects)
 - [CAN Protocol](https://github.com/SpaceTeam/can_houbolt)
-- [ECUI Web](https://github.com/SpaceTeam/web_ecui_houbolt)
-- [ECUI LL](https://github.com/SpaceTeam/llserver_ecui_houbolt)
-- [ECUI PnID](https://github.com/SpaceTeam/pnid_houbolt)
+- [ECUI Web](https://github.com/SpaceTeam/web_ecui_houbolt) (in active development for later projects)
+- [ECUI LL](https://github.com/SpaceTeam/llserver_ecui_houbolt) (in active development for later projects)
+- [ECUI PnID](https://github.com/SpaceTeam/pnid_houbolt) (in active development for later projects)
 - [ECUI Theming](https://github.com/SpaceTeam/SpaceTeamTheme)
-- [ECUI Config](https://github.com/SpaceTeam/config_ecui)
+- [ECUI Config](https://github.com/SpaceTeam/config_ecui) (uHoubolt branch)
 - [PnID KiCAD library](https://github.com/SpaceTeam/pnid-lib)
 
 ## Known Issues
