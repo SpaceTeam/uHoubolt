@@ -26,6 +26,7 @@ While unfortunately these ressources are for a large part not very well organize
 
 ### Mechanical
 - [Rocket CAD](https://github.com/SpaceTeam/uHoubolt_CAD)
+- [Nosecone & Fincan Manufacturing](CompositeManufacturing.pdf)
 
 ### Electronics
 - [Radio Communication Unit KiCAD Project](https://github.com/SpaceTeam/uHoubolt_PCB_RCU)
