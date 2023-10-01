@@ -1,5 +1,6 @@
 # µHoubolt
 µHoubolt (µHb for short) is an Ethanol/N2O liquid rocket sucessfully flown at EuRoC 2022. It is capable of reaching an altitude of 3km with a 1kg payload, with a lift-off mass of only 12kg and a length of 2m.
+It is designed to be able to mostly be manufactured in a basic workshop, using only a manual lathe and mill, basic hand tools, a tig welder, a simple CNC router and plastic FDM 3D printer. Exceptions are the carbon fiber body tube and the aluminium tanks (CNC turning and aluminium welding needed, can be replaced by heavier stainless steel tanks that are relatively easy to manufacture), which can be ordered from various manufacturers. 
 
 To enable others to benefit from our developments, and maybe even base their own rocket design on µHoubolt, all ressources are released publicly.
 To encurage further sharing of work based on this, licenses that mandate releasing modifications under the same licenses are used for most of the hard- and software. If these don't work for you for whatever reason, please feel free to contact us (email below) and we will find a solution.
@@ -9,7 +10,7 @@ This repository serves as an overview, containing some project ressources and li
 In case of any questions, please feel free to contact [uhb@spaceteam.at](mailto:uhb@spaceteam.at).
 
 ## Ressources
-While unfortunately these ressources are for a large part not very well organized, documented or complete (sorry!), they should contain everything needed to replicate this project. In case something appears to be missing, please contact us.
+While unfortunately these ressources are for a large part not very well organized, documented or complete (sorry!), they should contain everything needed to replicate this project. In case something relevant appears to be missing, please contact us.
 
 ### Documentation
 - [Website](https://spaceteam.at/uhb)
