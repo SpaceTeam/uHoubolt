@@ -10,6 +10,8 @@ This repository serves as an overview, containing some project ressources and li
 
 In case of any questions, please feel free to contact [uhb@spaceteam.at](mailto:uhb@spaceteam.at).
 
+![](Images/uHb.png)
+
 ## Ressources
 While unfortunately these ressources are for a large part not very well organized, documented or complete (sorry!), they should contain everything needed to replicate this project. In case something relevant appears to be missing, please contact us.
 
