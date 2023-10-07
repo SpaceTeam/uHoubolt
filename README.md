@@ -22,7 +22,7 @@ While unfortunately these ressources are for a large part not very well organize
 - [BOM](BOM) (Incomplete)
 - [EuRoC 2022 Flight Report](FlightReport_EuRoC2022.pdf)
 - [EuRoC 2022 Flight Data](FlightData_EuRoC2022)
-- MISC Pictures & Videos
+- [Images](Images/) A selection of pictures showing manufacturing, testing and launching.
 
 ### Simulation
 - [OpenRocket Liquid Engine Generator](https://github.com/SpaceTeam/ORLEG)
