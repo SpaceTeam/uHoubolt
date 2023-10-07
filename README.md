@@ -23,6 +23,7 @@ While unfortunately these ressources are for a large part not very well organize
 - [EuRoC 2022 Flight Report](FlightReport_EuRoC2022.pdf)
 - [EuRoC 2022 Flight Data](FlightData_EuRoC2022)
 - [Images](Images/) A selection of pictures showing manufacturing, testing and launching.
+- [Engine Testing & Launch Video Compilation](https://youtu.be/bNNrGTRMqmY)
 
 ### Simulation
 - [OpenRocket Liquid Engine Generator](https://github.com/SpaceTeam/ORLEG)
