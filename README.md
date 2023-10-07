@@ -80,3 +80,4 @@ Some of the ressources linked above contain known issues spcific to them. The ot
 - Igniter breech PTFE seals annoying, elastomer o-rings would probably be better
 - Igniter manufacturing inconsistent and dependent on experience
 - Umbilical decoupling not reliable enough
+- In the CAD, the fincan is too long and extends beyond the engine. In reality that is not the case, as can be seen on pictures.
